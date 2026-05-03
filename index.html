@@ -25,11 +25,12 @@
     }
 
     header {
-        position: fixed;
+        position: sticky;
         width: 100%;
         top: 0;
 
     }
+
     nav {
         height: 70px;
 
@@ -42,7 +43,7 @@
 
     }
 
-    .leftnav {
+    .logo {
         width: 30%;
 
         text-align: center;
@@ -53,18 +54,18 @@
         margin-left: 50px;
     }
 
-    .leftnav spam {
+    .logo span {
         color: #ff3c00;
     }
 
-    .rightnav {
+    .menu {
         width: 40%;
 
         margin-right: 150px;
 
     }
 
-    .rightnav ul {
+    .menu ul {
         list-style: none;
         display: flex;
         justify-content: space-between;
@@ -77,10 +78,15 @@
 
     }
 
-    .rightnav li a {
+    .menu li a {
         text-decoration: none;
         color: rgb(191, 189, 189);
         margin-right: 10px;
+    }
+
+    .menu li a:hover{
+        color: rgb(126, 122, 122);
+        text-decoration: underline;
     }
 
     .apply {
@@ -106,23 +112,130 @@
 
 
     }
-.leftsection{
 
-}
-.rightsection{
+
+    .main {
+        backgrfound: rgb(0, 0, 0);
+        width: 60%;
+        height: 700px;
+        margin-left: 20%;
+        margin-top: 20px;
+
+    }
+
+    .add {
+        backgrfhound: black;
+        text-align: center;
+        padding-top: 40px;
+        font-family: 'Syne', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #ff3c00;
+    }
+
+    .tagline {
+        text-align: center;
+        margin-top: 0px;
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 5px;
+        font-size: 150px;
+        font-weight: 1000;
+        text-shadow: 5px 0px 2px #ff3c00;
+    }
+
+    .tagline span {
+        color: #ff3c00;
+        text-shadow: 5px 0px 2px rgb(250, 250, 250);
+    }
+
+    .tagline2 span {
+        color: #ff3c00;
+        text-shadow: 5px 0px 2px rgb(250, 250, 250);
+    }
+
+    .tagline2 {
+        text-align: center;
+        margin-top: -50px;
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 5px;
+        font-size: 160px;
+        font-weight: 1000;
+        text-shadow: 5px 0px 2px #ff3c00;
+    }
+
+    .about {
+        text-align: center;
+
+        font-size: 15px;
+        font-weight: 200;
+        color: gray;
+        line-height: 1.5;
+    }
+
+    .ARENA {
+        margin-top: 20PX;
+    }
+
+    .name {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-bottom: -20px;
+        font-family: 'Syne', sans-serif;
+        font-size: 25px;
+        font-weight: 300;
+        letter-spacing: 27px;
+
+    }
+    .centerinfo{
+        display: flex;
+        justify-content: space-around;
+        
+
+        
+    }
+
+    .centerinfo DIV{
+        
+        box-sizing: border-box;
+        width: 20%;
+        height: 60PX;
+        border-radius: 5px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(132, 131, 131, 0.75);
+        box-shadow: 0 0 0 rgba(255,60,0,0);
+        transition: 0.4s ease;
+         font-family: 'Syne', sans-serif;
+         color: rgb(174, 174, 174);
+         
+         font-size: 20px;
+         letter-spacing: 5px;
+         text-align: center;
+         padding-top: 15px;
+         
+    }
+    .centerinfo DIV span{
+        color: #ff3c00;
+        
+    }
+
+    .centerinfo DIV:hover{
+         transform: translateY(-5px);
+          box-shadow: 0 4px 30px #ff3c00;
+    }
     
-}
-
-
+  
 
 </style>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="leftnav"> Arena <spam>Animation</spam>
+            <div class="logo"> Arena <span>Animation</span>
             </div>
-            <div class="rightnav">
+            <div class="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -130,16 +243,45 @@
                     <li><a href="Event.html">Event</a></li>
                     <li><a href="Review.html">Review</a></li>
                     <li><a href="Contact.html">Contact </a></li>
-                    <li> <a href="tel:9999999999"><button class="apply">Call Now</button></a></li>
+                    <li> <a href="tel:9999999999"><button class="apply">Call Us</button></a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-       <section>
-        <div class="leftsection"></div>
-        <div class="rightsection"></div>
-       </section>
+        <section class="sone">
+            <div class="main">
+                <div class="add">GTB NAGAR, DELHI-EST.2003</div>
+                <div class="name">ARENA ANIMATION</div>
+                <div class="tagline">LEARN <span>FROM</span></div>
+                <div class="tagline2"> THE <span>LEADER</span></div>
+                <div class="ARENA">
+                    <p class="about">India's premier animation, VFX, game design & UI/UX institute. Build careers that
+                        reshape the entertainment industry.</p>
+                    <p class="about">
+                        Arena is the high-end Best 3D Animation, VFX & Game education vertical of Aptech Ltd.. This year
+                        marks the completion of 30 years of Arena Animation Institute as a leader in career-oriented
+                        courses like animation, Graphic and web Design, VFX, and game design. This milestone is
+                        significant not only because of the outstanding accomplishments along the way but also because
+                        of the lives touched in the past two and a half decades.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </section>
+<section class="stwo">
+    <div class="centerinfo">
+        <div>20<span>+</span> CENTERS</div>
+        <div>25<span>+</span> YEARS OF LEGACY </div>
+        <div>1L<span>+</span> STUDENTS PER YEAR</div>
+    </div>
+</section>
+
+<section class="sthree">
+
+</section>
     </main>
 </body>
 
