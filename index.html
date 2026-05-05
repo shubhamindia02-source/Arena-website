@@ -10,17 +10,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
 </head>
 <style>
     * {
         margin: 0;
         padding: 0;
+         box-sizing: border-box;
+        
     }
 
     body {
         background: #07070d;
         font-family: 'DM Sans', sans-serif;
         color: #f0eee8;
+        
 
     }
 
@@ -28,66 +32,71 @@
         position: sticky;
         width: 100%;
         top: 0;
+         background: #050508;
 
     }
 
     nav {
         height: 70px;
-
-        background: #050508;
+                   max-width: 1200px;
+                    margin: auto;
+       
         display: flex;
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
-        flex-wrap: wrap;
+          padding: 0 20px;    
+       
 
     }
 
     .logo {
-        width: 30%;
+        width: 20%;
 
         text-align: center;
         font-size: 30px;
         font-family: 'Bebas Neue', sans-serif;
         font-size: 28px;
         letter-spacing: 3px;
-        margin-left: 50px;
+        
     }
 
     .logo span {
         color: #ff3c00;
     }
 
-    .menu {
-        width: 40%;
-
-        margin-right: 150px;
-
-    }
+ 
 
     .menu ul {
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        
         gap: 40px;
         font-family: 'Syne', 'sans-serif';
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 1.3px;
+        margin-right: -50px;        
 
 
     }
 
-    .menu li a {
+    .mm {
         text-decoration: none;
         color: rgb(191, 189, 189);
-        margin-right: 10px;
+        mar   gin-right: 10px;
     }
 
-    .menu li a:hover{
+    .mm:hover{
         color: rgb(126, 122, 122);
-        text-decoration: underline;
+        
     }
+
+    .hamburger {
+    display: none;
+    font-size: 24px;
+}
+
 
     .apply {
         font-family: 'Syne', 'sans-serif';
@@ -124,7 +133,7 @@
     }
 
     .add {
-        backgrfhound: black;
+        background: black;
         text-align: center;
         padding-top: 40px;
         font-family: 'Syne', sans-serif;
@@ -188,7 +197,7 @@
         letter-spacing: 27px;
 
     }
-    .centerinfo{
+    .cards{
         display: flex;
         justify-content: space-around;
         
@@ -196,7 +205,7 @@
         
     }
 
-    .centerinfo DIV{
+    .card{
         
         box-sizing: border-box;
         width: 20%;
@@ -216,36 +225,38 @@
          padding-top: 15px;
          
     }
-    .centerinfo DIV span{
+    .card span{
         color: #ff3c00;
         
     }
 
-    .centerinfo DIV:hover{
+    .card:hover{
          transform: translateY(-5px);
           box-shadow: 0 4px 30px #ff3c00;
     }
     
-  
+    
 
 </style>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo"> Arena <span>Animation</span>
-            </div>
+            <div class="logo"> Arena <span>Animation</span></div>
+            <div class="hamburger" >vb☰</div>
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="course.html">Course</a></li>
-                    <li><a href="Event.html">Event</a></li>
-                    <li><a href="Review.html">Review</a></li>
-                    <li><a href="Contact.html">Contact </a></li>
-                    <li> <a href="tel:9999999999"><button class="apply">Call Us</button></a></li>
-                </ul>
-            </div>
+                    <li><a href="index.html"  class="mm" >Home</a></li>
+                    <li><a href="about.html"  class="mm" >About</a></li>
+                    <li><a href="course.html"  class="mm"  >Course</a></li>
+                    <li><a href="Event.html"   class="mm"  >Event</a></li>
+                    <li><a href="Review.html"  class="mm"  >Review</a></li>
+                    <li><a href="Contact.html"  class="mm"  >Contact </a></li>
+                    <li> <a href="tel:9999999999"  ><button class="apply">Call Us</button></a></li>
+                </div>
+                  
+                
+                
         </nav>
     </header>
     <main>
@@ -272,10 +283,10 @@
 
         </section>
 <section class="stwo">
-    <div class="centerinfo">
-        <div>20<span>+</span> CENTERS</div>
-        <div>25<span>+</span> YEARS OF LEGACY </div>
-        <div>1L<span>+</span> STUDENTS PER YEAR</div>
+    <div class="cards">
+        <div class="card">20<span>+</span> CENTERS</div>
+        <div class="card">25<span>+</span> YEARS OF LEGACY </div>
+        <div class="card">1L<span>+</span> STUDENTS PER YEAR</div>
     </div>
 </section>
 
