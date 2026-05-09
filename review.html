@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <title>Review page</title>
+</head>
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+         box-sizing: border-box;
+        
+    }
+
+    body {
+       /* main color do not chnage   #0d0d14*/
+        font-family: 'DM Sans', sans-serif;
+        color: #f0eee8;
+        
+
+    }
+
+  /* nav start*/
+    header {
+        position: sticky;
+        width: 100%;
+        top: 0;
+        background: #050508; /* nav bar color code #050508*/
+         
+        
+    }
+
+    nav {
+       
+        height: 70px;
+     margin: auto;       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-sizing: border-box;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.141);
+         
+
+    }
+
+    .logo {
+        width: 20%;
+
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 28px;
+        letter-spacing: 3px;
+        
+    }
+
+    .logo span {
+        color: #ff3c00;
+    }
+  
+ 
+
+    .menu ul {
+        list-style: none;
+        display: flex;
+        
+        gap: 40px;
+        font-family: 'Syne' 'sans-serif';
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1.3px;
+               
+
+
+    }
+
+    .mm {
+        text-decoration: none;
+        color: rgb(191, 189, 189);
+        padding: 5px;
+    }
+
+    .mm:hover{
+        color: rgb(126, 122, 122);
+        
+    }
+
+    .hamburger {
+    display: none;
+    font-size: 24px;
+    background: #000;
+
+}
+
+    .apply {
+        font-family: 'Syne', 'sans-serif';
+        background: #cc3000;
+        color: whitesmoke;
+        box-sizing: border-box;
+        border-width: 0;
+        width: 130px;
+        height: 30px;
+        border-radius: 3px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 3px 15px;
+        font-family: 'Syne', sans-serif;
+    }
+    /* nav end*/
+
+     /* MAIN START*/
+body{
+    background: #050508;
+}
+
+.heading h3{
+     font-family: 'Syne' 'sans-serif';
+     font-style: italic;
+        padding-top: 50px;
+     margin-left: 60px;
+     letter-spacing: 5px;
+     color: #ff3c00;
+     
+}
+
+.heading h2{
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 80px;
+     margin-left: 60px;
+     letter-spacing: 3px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.box{
+     width: 31%;
+    margin-top: 30px;
+    box-sizing: border-box;
+     border-radius: 2px;
+        border-width: 1px;
+        border-style: solid;
+        background:#0d0d14;
+        border-color: rgba(255, 255, 255, 0.39);
+        height: 200px;
+        transition: 0.3s ease-in;
+}
+.box:hover{
+    border-color: #ff3c0059;
+    
+}
+
+.names{
+    display: flex;
+    margin: 30px;
+}
+
+.namelogo{
+    
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background: #ff3c00;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+.name{
+    margin-left: 20px;
+}
+
+.name h4{
+     font-family: 'Syne' 'sans-serif';
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+
+}
+.name h5{
+    color: #ff3c00;
+    font-weight: 200;
+    margin-top: 2px;
+}
+
+.text{
+    margin: 35px;
+    font-weight: 200;
+    font-style: italic;
+    color:rgb(134, 132, 132);
+}
+
+
+
+
+
+/* MAIN END */
+
+
+
+
+  /* footer start
+  */
+    .footerinfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background:#0d0d14;
+    margin-top: 40px;
+
+}
+  .bottomlogo {
+      
+
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 28px;
+        letter-spacing: 3px;
+        
+    }
+
+    .bottomlogo span {
+        color: #ff3c00;
+    }
+.copyright{
+    color: rgba(245, 245, 245, 0.5);
+}
+    
+ .social {
+    display: flex;
+     gap: 15px;
+      
+ }
+.social a{
+    
+ text-decoration: none;
+ color: rgba(255, 255, 255, 0.808);
+ width: 36px;
+    height: 36px;
+     box-sizing: border-box;
+    border: 1px solid rgba(236, 236, 236, 0.842);
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px;   
+    transition: 0.3s ease-in;
+   
+}
+.social a:hover{
+     border: 1px solid #ff3c00cc;
+      color: #ff3c00d7;
+      transform: scale(1.3);
+
+
+}
+  /* footer end*/
+
+    
+
+</style>
+<body>
+        <header>
+        <nav class="navbar">
+            <div class="logo"> Arena <span>Animation</span></div>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html"  class="mm" >Home</a></li>
+                    <li><a href="about.html"  class="mm" >About</a></li>
+                    <li><a href="course.html"  class="mm"  >Course</a></li>
+                    <li><a href="Event.html"   class="mm"  >Event</a></li>
+                    <li><a href="Review.html"  class="mm"  >Review</a></li>
+                    <li><a href="Contact.html"  class="mm"  >Contact </a></li>
+                    <li> <a href="tel:9999999999"  ><button class="apply">Call Us</button></a></li>
+                </div>
+
+                <div class="hamburger" >☰</div>
+                
+        </nav>
+    </header>
+<main>
+    <div class="heading">
+        <h3>Student</h3>
+        <h2>
+            SUCCESS <br> STORIES...
+        </h2>
+    </div>
+
+    <div class="boxes">
+
+        <!--box1-->
+        <div class="box">
+            <div class="names">
+                <div class="namelogo">SB</div>
+                <div class="name">
+                        <h4>Sachin Bhati</h4>
+                        <h5>Animation studio Artist</h5>
+                    </div>
+
+            </div>
+            <div class="text"> Arena gave me a path after 12th when everything felt uncertain. Rakesh sir and Amit sir's guidance changed my life completely.</div>
+            
+        </div>
+
+         <!--box2-->
+        <div class="box">
+            <div class="names">
+                <div class="namelogo">KJ</div>
+                <div class="name">
+                        <h4>Kajal Chawla</h4>
+                        <h5>2D/3D Animator</h5>
+                    </div>
+
+            </div>
+            <div class="text">My dream was always animation but I had zero skills. Arena turned me into a highly equipped professional in just two years.</div>
+            
+        </div>
+
+
+         <!--box3-->
+        <div class="box">
+            <div class="names">
+                <div class="namelogo">DM</div>
+                <div class="name">
+                        <h4>Dhruv Modi</h4>
+                        <h5>Senior 3D Rigger</h5>
+                    </div>
+
+            </div>
+            <div class="text">Arena has played an important role building my career in 3D Rigging. The faculty's support is outstanding and placement cell is superb.</div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+   
+     <div class="boxes">
+
+        <!--box4-->
+        <div class="box">
+            <div class="names">
+                <div class="namelogo">SB</div>
+                <div class="name">
+                        <h4>Sweety Kaushik</h4>
+                        <h5>Video Editor</h5>
+                    </div>
+
+            </div>
+            <div class="text">Thankful to my teacher and Arena Animation for supporting and guiding me to achieve my goal in the editor field</div>
+            
+        </div>
+
+         <!--box5-->
+        <div class="box">
+            <div class="names">
+                <div class="namelogo">PK</div>
+                <div class="name">
+                        <h4>Pankaj Kumar</h4>
+                        <h5>Graphic Designer</h5>
+                    </div>
+
+            </div>
+            <div class="text">The training I received from Arena helped me get placed successfully. The placement cell is incredibly caring and efficient.</div>
+            
+        </div>
+
+
+         <!--box6-->
+        <div class="box">
+            <div class="names">
+                <div class="namelogo">KR</div>
+                <div class="name">
+                        <h4>Kapil Ratnakar</h4>
+                        <h5>VFX Artist, Sun Technologies</h5>
+                    </div>
+
+            </div>
+            <div class="text">Great institute! Thanks for shaping up my career and getting me a job at Sun Technologies. Best decision of my life.
+
+            </div>
+            
+        </div>
+
+    </div>
+         
+
+</main>
+
+
+    <footer>
+    <div class="footerinfo">
+        <div class="bottomlogo" > ARENA <span>Animation</span></div>
+        <div class="copyright">© 2026 Arena ANIMATION Delhi. All Rights Reserved</div>
+        <div class="social">
+            <a href="#">f</a>
+            <a href="#">ig</a>
+            <a href="#">in</a>
+            
+        </div>
+    </div>
+
+
+</footer>
+
+</body>
+</html>
