@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="indexmedia.css">
 </head>
 <style>
     * {
@@ -96,17 +96,12 @@
         
     }
 
-    .hamburger {
-    display: none;
-    font-size: 24px;
-    background: #000;
-
-}
+  
 
 
     .apply {
         font-family: 'Syne', 'sans-serif';
-        background: #cc3000;
+        background:  #ff3c00;
         color: whitesmoke;
         box-sizing: border-box;
         border-width: 0;
@@ -265,7 +260,7 @@
        font-size: 25px;
         letter-spacing: 3px;
          padding: 0 40px;
-        color: #ff3c00;
+        color: #ffffff;
          align-items: center;
          white-space: nowrap;
         
@@ -439,8 +434,10 @@
      align-items: center;
      
      
+     
     
 }
+
 
 
 .compname2{
@@ -541,19 +538,24 @@
     <header>
         <nav class="navbar">
             <div class="logo"> Arena <span>Animation</span></div>
+             <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             
-            <div class="menu">
+            <div class="menu" id="rightnav">
                 <ul>
                     <li><a href="index.html"  class="mm" >Home</a></li>
                     <li><a href="about.html"  class="mm" >About</a></li>
                     <li><a href="course.html"  class="mm"  >Course</a></li>
-                    <li><a href="event.html"   class="mm"  >Event</a></li>
+                   
                     <li><a href="review.html"  class="mm"  >Review</a></li>
                     <li><a href="contact.html"  class="mm"  >Contact </a></li>
                     <li> <a href="tel:9999999999"  ><button class="apply">Call Us</button></a></li>
                 </div>
 
-                <div class="hamburger" >☰</div>
+                
                 
         </nav>
     </header>
