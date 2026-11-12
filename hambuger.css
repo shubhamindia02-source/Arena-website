@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #0d0d14;
+    /* main color do not chnage   #0d0d14*/
+    font-family: 'DM Sans', sans-serif;
+    color: #f0eee8;
+
+
+}
+
+
+/* nav start*/
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background: #050508;
+    /* nav bar color code #050508*/
+
+
+}
+
+nav {
+
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.141);
+
+
+    opacity: 1;
+
+
+
+}
+
+.logo {
+    width: 20%;
+
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+
+}
+
+.logo span {
+    color: #ff3c00;
+}
+
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+
+    gap: 40px;
+    font-family: 'Syne' 'sans-serif';
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+
+
+
+
+}
+
+.mm {
+    text-decoration: none;
+    color: rgb(191, 189, 189);
+    padding: 5px;
+}
+
+.mm:hover {
+    color: rgb(126, 122, 122);
+
+}
+
+
+
+
+.apply {
+    font-family: 'Syne', 'sans-serif';
+    background: #ff3c00;
+    color: whitesmoke;
+    box-sizing: border-box;
+    border-width: 0;
+    width: 130px;
+    height: 30px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 3px 15px;
+
+
+
+    font-family: 'Syne', sans-serif;
+
+
+
+
+
+}
+
+/* nav end*/
+
+
+
+
+
+.ham img {
+    width: 40px;
+    display: none;
+    margin-right: -40px;
+
+}
+
+
+
+/* slide menu */
+
+
+
+#slidemenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #0d0d14d2;
+
+    backdrop-filter: blur(20px);
+    width:100vw;
+    padding: 10px 10px;
+
+
+}
+
+.footerinfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: #0d0d14;
+    margin-top: 40px;
+
+}
+
+.bottomlogo {
+
+
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+
+}
+
+.bottomlogo span {
+    color: #ff3c00;
+}
+
+.copyright {
+    color: rgba(245, 245, 245, 0.5);
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+
+}
+
+.social a {
+
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.808);
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    border: 1px solid rgba(236, 236, 236, 0.842);
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px;
+    transition: 0.3s ease-in;
+
+}
+
+.social a:hover {
+    border: 1px solid #ff3c00cc;
+    color: #ff3c00d7;
+    transform: scale(1.3);
+
+
+}
+
+/* footer end*/
+
+
+
+
+
+
+    @media (max-width:767px){
+
+
+
+          .ham img{
+    display: block;
+   }
+
+   #slidemenu{
+    display: flex;
+   }
+
+ 
+    .logo{
+        font-size: 20px;
+       
+        gap: 10px;
+        margin-left: -50px;
+    }
+
+
+    #rightnav{
+        display: none;
+    
+    }
+
+    }
+
+     @media (min-width:768px) and (max-width:991px){
+
+               .ham img{
+    display: block;
+   }
+
+   #slidemenu{
+    display: flex;
+   }
+
+ 
+    .logo{
+        font-size: 20px;
+       
+        gap: 10px;
+        margin-left: -50px;
+    }
+
+
+    #rightnav{
+        display: none;
+    
+    }
+     }
+
+
+     
+
+
+    @media (min-width: 991px) and (max-width: 1199px) {
+
+
+  
+
+
+ 
+    .logo{
+        font-size: 20px;
+       
+        gap: 10px;
+        /* margin-left: -50px; */
+    }
+      #rightnav{
+       
+        margin-right: -90px;
+      }
+    
+
+
+    }
+
+
+
+
+
+
+
+    

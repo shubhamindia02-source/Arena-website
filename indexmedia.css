@@ -1,0 +1,830 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+/* main body start*/
+.main {
+
+    width: 60%;
+    height: 700px;
+    margin-left: 20%;
+    margin-top: 50px;
+
+}
+
+.add {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ff3c00;
+}
+
+.tagline {
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+    font-size: 150px;
+    font-weight: 1000;
+
+}
+
+.tagline span {
+    color: #ff3c00;
+    text-shadow: 5px 0px 2px rgb(250, 250, 250);
+}
+
+.tagline2 span {
+    color: #ff3c00;
+    text-shadow: 5px 0px 2px rgb(250, 250, 250);
+}
+
+.tagline2 {
+    text-align: center;
+    margin-top: -20px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+    font-size: 160px;
+    font-weight: 1000;
+
+}
+
+.about {
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: 200;
+    color: gray;
+    line-height: 1.5;
+}
+
+.ARENA {
+    margin-top: 20PX;
+}
+
+.name {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: -20px;
+    font-family: 'Syne', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 27px;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+
+
+
+}
+
+.card {
+
+    box-sizing: border-box;
+    width: 20%;
+    height: 60PX;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(132, 131, 131, 0.75);
+    box-shadow: 0 0 0 rgba(255, 60, 0, 0);
+    transition: 0.4s ease;
+    font-family: 'Syne', sans-serif;
+    color: rgb(174, 174, 174);
+
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+.card span {
+    color: #ff3c00;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 30px #ff3c00;
+}
+
+.sthree {
+    margin-top: 70px;
+    background: #050508;
+    /* banner color code #050508 */
+    border-top: 1px solid rgba(255, 255, 255, 0.575);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+    padding: 18px 0px;
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    gap: 0px;
+
+    animation: slide 20s linear infinite;
+
+
+}
+
+
+.names {
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding: 0 40px;
+    color: #ffffff;
+    align-items: center;
+    white-space: nowrap;
+
+
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-70%);
+    }
+}
+
+
+
+/* --------------------?sectgion four __________  */
+.sfour {
+    background: #050508;
+    /* second main color*/
+
+    height: 750px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10PX;
+
+}
+
+.year {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 300PX;
+    letter-spacing: 3PX;
+    color: rgba(255, 255, 255, 0.075);
+    stroke-width: 2px solid white;
+
+}
+
+.year span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 300PX;
+
+    color: #ff3c00;
+}
+
+
+.leadbord {
+    width: 50%;
+    margin-right: 30px;
+}
+
+.leadbord h4 {
+
+    padding-top: 60px;
+    font-family: 'Syne', 'sans-serif';
+    letter-spacing: 4px;
+    color: #ff3c00;
+}
+
+.leadbord h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60PX;
+}
+
+.leadbord p {
+
+
+    font-size: 18px;
+    font-weight: 200;
+    color: gray;
+    line-height: 1.5;
+
+}
+
+.boxx1 {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+
+
+
+
+}
+
+.boxx1 div {
+    width: 45%;
+    box-sizing: border-box;
+    height: 100PX;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.39);
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    transition: .3s ease-in;
+
+
+}
+
+.boxx1 div:hover {
+    border-color: #f35727;
+}
+
+.boxx2 div:hover {
+    border-color: #f35727;
+}
+
+.boxx2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.5;
+
+}
+
+.boxx2 div {
+    width: 45%;
+    box-sizing: border-box;
+
+    height: 100PX;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.39);
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    transition: .3s ease-in;
+}
+
+.demo {
+    margin-top: 22px;
+    box-sizing: border-box;
+
+
+    border-radius: 5px;
+    border-width: 0px;
+    border-style: solid;
+    background: #cc3000;
+
+    transition: 0.3s ease-in;
+
+}
+
+.demo a {
+    font-size: 30px;
+    color: whitesmoke;
+    /* padding-left: 250px; */
+    margin-left: 250px;
+
+
+
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+
+.demo:hover {
+    box-shadow: 0px 5px 20px #cc3000ab;
+    transform: translateY(-3px);
+
+}
+
+.sfive {
+    background: #0d0d14;
+    height: 450px;
+
+}
+
+.topr {
+
+    text-align: center;
+    padding-top: 35px;
+}
+
+.topr h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60PX;
+
+}
+
+.compname {
+    display: flex;
+    justify-content: space-around;
+    margin: 35px;
+    align-items: center;
+
+
+
+
+}
+
+
+
+.compname2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 35px;
+}
+
+.ssix {
+    background: #ff3c00;
+    height: 350px;
+
+}
+
+.ssix h4 {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Syne', 'sans-serif';
+    letter-spacing: 10px;
+
+}
+
+.ssix h3 {
+    text-align: center;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    margin-top: 10PX;
+    letter-spacing: 15px;
+
+}
+
+.ssix h2 {
+    text-align: center;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 120px;
+    margin-top: -40px;
+    letter-spacing: 0px;
+
+}
+
+
+/* main body end*/
+
+
+
+
+
+
+/* media quer */
+
+
+@media (max-width:767px) {
+
+
+
+    .sone {
+        margin-top: 20px;
+
+        height: 90vh;
+
+    }
+
+
+    .main {
+
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .add {
+        font-size: 1.1rem;
+    }
+
+    .name {
+
+        font-size: 1.3rem;
+        letter-spacing: 9px;
+
+        margin-left: -1px;
+    }
+
+    .tagline {
+        font-size: 4rem;
+        margin-top: 10px;
+
+    }
+
+    .tagline2 {
+        font-size: 4rem;
+    }
+
+    .about {
+        font-size: 1rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .ARENA {
+        margin-top: 0PX;
+    }
+
+    .stwo {
+
+        margin-top: -50px;
+    }
+
+    .cards {
+
+        display: inline;
+
+
+    }
+
+    .card {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 1rem;
+
+    }
+
+
+    /*+++++++++ s four _______________ */
+
+
+
+    .sfour {
+
+        display: block;
+        justify-content: center;
+        height: fit-content;
+
+
+    }
+
+    .year {
+
+        width: 90%;
+        font-size: 5rem;
+
+
+    }
+
+    .year span {
+        font-size: 5rem;
+    }
+
+    .year BR {
+        display: none;
+
+    }
+
+    .leadbord {
+        width: 90%;
+        /* background-color: red; */
+        margin-top: -50px;
+
+        margin-left: 30px;
+    }
+
+    .leadbord h3 {
+        font-size: 2.9rem;
+    }
+
+    .boxx1 div,
+    .boxx2 div {
+
+        font-size: 1rem;
+    }
+
+    .demo {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+        /* margin-left: -10px; */
+
+
+
+    }
+
+    .demo a {
+        font-size: 1.2rem;
+        padding: 0;
+        letter-spacing: 3px;
+        margin: auto;
+
+
+    }
+
+    /* ?-----sfive---- */
+
+    .sfive {
+
+        height: fit-content;
+    }
+
+    .topr h3 {
+        font-size: 2.9rem;
+    }
+
+    .collect {
+        display: flex;
+
+        width: 90%;
+        margin-left: 5%;
+
+    }
+
+    .compname,
+    .compname2 {
+        display: inline;
+
+
+    }
+
+    .compname img,
+    .compname2 img {
+        width: 100%;
+    }
+
+    .ssix {
+
+        height: fit-content;
+    }
+
+    .ssix h3 {
+        font-size: 3.7rem;
+    }
+
+    .ssix h2 {
+        font-size: 4.5rem;
+        margin-top: 5px;
+    }
+
+    .footerinfo {
+        flex-direction: column;
+
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+        align-items: center;
+    }
+
+    /* -------index page complete */
+
+
+
+
+
+}
+
+
+
+/* tablet ?---------- */
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .sone {
+        margin-top: 20px;
+
+      
+        height: fit-content;
+
+    }
+
+    .main {
+
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .stwo {
+
+        margin-top: 50px;
+    }
+
+    .card {
+        width: 30%;
+
+        margin: auto;
+        margin-top: 20px;
+        font-size: 0.7rem;
+
+    }
+
+    .sfour {
+
+        display: block;
+        justify-content: center;
+        height: fit-content;
+
+
+
+
+
+    }
+
+    .year {
+
+        width: 90%;
+        font-size: 5rem;
+
+    }
+
+    .year span {
+        font-size: 5rem;
+    }
+
+    .year BR {
+        display: none;
+        
+
+    }
+
+    .leadbord {
+        width: 90%;
+
+        margin-top: -50px;
+
+        margin-left: 30px;
+    }
+
+    .leadbord h3 {
+        font-size: 2.9rem;
+    }
+
+    .boxx1 div,
+    .boxx2 div {
+
+        font-size: 1rem;
+    }
+
+    .demo {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+       
+
+
+
+    }
+
+    .demo a {
+        font-size: 1.2rem;
+        padding: 0;
+        letter-spacing: 3px;
+
+    }
+
+    /* ?-----sfive---- */
+
+    .sfive {
+
+        height: fit-content;
+    }
+
+    .topr h3 {
+        font-size: 2.9rem;
+    }
+
+    .compname img,
+    .compname2 img {
+        width: 100%;
+    }
+
+
+    .footerinfo {
+        flex-direction: column;
+
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+        align-items: center;
+    }
+
+
+}
+
+
+
+/* @media (min-width:991px) and (max-width:1039px) */
+@media (min-width: 991px) and (max-width: 1199px) 
+
+{
+  
+
+    
+    .sone {
+        margin-top: 20px;
+
+        /* height: 90vh; */
+
+    }
+
+    .main {
+
+        width: 90%;
+        margin: auto;
+
+
+    }
+
+    .card {
+        width: 30%;
+
+        margin: auto;
+        margin-top: 20px;
+        font-size: 1rem;
+
+    }
+
+    .sfour {
+
+        height: fit-content;
+
+    }
+      .year {
+
+        width: 40%;
+        font-size: 15rem;
+        
+
+    }
+    .year span{
+        font-size: 15rem;
+    }
+
+      .demo {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+       
+
+
+
+    }
+    .demo a {
+        font-size: 1.2rem;
+        padding: 0;
+        letter-spacing: 3px;
+
+
+    }
+
+    .sfive{
+        height: fit-content;
+    }
+
+    .collect .compname2{
+        gap: 10px;
+
+
+    }
+
+
+
+
+
+
+}

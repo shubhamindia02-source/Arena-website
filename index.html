@@ -7,560 +7,73 @@
     <title>Arena Website
 
     </title>
+
+    
+
+    <link rel="stylesheet" href="hambuger.css">
+    <link rel="stylesheet" href="indexmedia.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="indexmedia.css">
+
+
+
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-         box-sizing: border-box;
-        
-    }
 
-    body {
-        background: #0d0d14; /* main color do not chnage   #0d0d14*/
-        font-family: 'DM Sans', sans-serif;
-        color: #f0eee8;
-        
 
-    }
 
-    
-  /* nav start*/
-
-    header {
-        position: sticky;
-        width: 100%;
-        top: 0;
-        background: #050508; /* nav bar color code #050508*/
-         
-        
-    }
-
-    nav {
-       
-        height: 70px;
-     margin: auto;       
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        box-sizing: border-box;
-         border-bottom: 0.5px solid rgba(255, 255, 255, 0.141);
-
-         
-
-    }
-
-    .logo {
-        width: 20%;
-
-        text-align: center;
-        font-size: 30px;
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 28px;
-        letter-spacing: 3px;
-        
-    }
-
-    .logo span {
-        color: #ff3c00;
-    }
-  
- 
-
-    .menu ul {
-        list-style: none;
-        display: flex;
-        
-        gap: 40px;
-        font-family: 'Syne' 'sans-serif';
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: 1.3px;
-               
-
-
-    }
-
-    .mm {
-        text-decoration: none;
-        color: rgb(191, 189, 189);
-        padding: 5px;
-    }
-
-    .mm:hover{
-        color: rgb(126, 122, 122);
-        
-    }
-
-  
-
-
-    .apply {
-        font-family: 'Syne', 'sans-serif';
-        background:  #ff3c00;
-        color: whitesmoke;
-        box-sizing: border-box;
-        border-width: 0;
-        width: 130px;
-        height: 30px;
-        border-radius: 3px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        font-weight: 500;
-        padding: 3px 15px;
-
-
-
-        font-family: 'Syne', sans-serif;
-
-
-
-
-
-    }
-
-  /* nav end*/
- 
-  /* main body start*/
-    .main {
-       
-        width: 60%;
-        height: 700px;
-        margin-left: 20%;
-        margin-top: 20px;
-
-    }
-
-    .add {
-        text-align: center;
-        padding-top: 40px;
-        font-family: 'Syne', sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 3px;
-        color: #ff3c00;
-    }
-
-    .tagline {
-        text-align: center;
-        margin-top: 0px;
-        font-family: 'Bebas Neue', sans-serif;
-        letter-spacing: 5px;
-        font-size: 150px;
-        font-weight: 1000;
-        
-    }
-
-    .tagline span {
-        color: #ff3c00;
-        text-shadow: 5px 0px 2px rgb(250, 250, 250);
-    }
-
-    .tagline2 span {
-        color: #ff3c00;
-        text-shadow: 5px 0px 2px rgb(250, 250, 250);
-    }
-
-    .tagline2 {
-        text-align: center;
-        margin-top: -20px;
-        font-family: 'Bebas Neue', sans-serif;
-        letter-spacing: 5px;
-        font-size: 160px;
-        font-weight: 1000;
-      
-    }
-
-    .about {
-        text-align: center;
-
-        font-size: 15px;
-        font-weight: 200;
-        color: gray;
-        line-height: 1.5;
-    }
-
-    .ARENA {
-        margin-top: 20PX;
-    }
-
-    .name {
-        text-align: center;
-        margin-top: 20px;
-        margin-left: 25px;
-        margin-bottom: -20px;
-        font-family: 'Syne', sans-serif;
-        font-size: 25px;
-        font-weight: 300;
-        letter-spacing: 27px;
-
-    }
-    .cards{
-        display: flex;
-        justify-content: space-around;
-        
-
-        
-    }
-
-    .card{
-        
-        box-sizing: border-box;
-        width: 20%;
-        height: 60PX;
-        border-radius: 5px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: rgba(132, 131, 131, 0.75);
-        box-shadow: 0 0 0 rgba(255,60,0,0);
-        transition: 0.4s ease;
-         font-family: 'Syne', sans-serif;
-         color: rgb(174, 174, 174);
-         
-         font-size: 20px;
-         letter-spacing: 5px;
-         text-align: center;
-         padding-top: 15px;
-         
-    }
-    .card span{
-        color: #ff3c00;
-        
-    }
-
-    .card:hover{
-         transform: translateY(-5px);
-          box-shadow: 0 4px 30px #ff3c00;
-    }
-
-    .sthree{
-        margin-top: 70px;
-         background: #050508;/* banner color code #050508 */
-         border-top: 1px solid rgba(255, 255, 255, 0.575);
-        border-bottom:  1px solid rgba(255, 255, 255, 0.575);
-        padding: 18px 0px ; 
-        overflow: hidden;
-    }
- 
-    .banner{
-        display: flex;
-        gap: 0px;
-        
-        animation: slide 20s linear infinite;
-        
-       
-    }
-    .names{
-        
-       font-family: 'Bebas Neue', sans-serif;
-       font-size: 25px;
-        letter-spacing: 3px;
-         padding: 0 40px;
-        color: #ffffff;
-         align-items: center;
-         white-space: nowrap;
-        
-           
-    }
-  @keyframes slide {
-    from { transform: translateX(0); }
-    to { transform: translateX(-70%); }
-  }
-    .sfour
-    {
-        background: #050508; /* second main color*/
-      
-        height: 750px;
-        display: flex;
-        justify-content: space-around;
-        padding: 10PX;
-        
-    }
-    .year{
-        width: 50%;
-        margin-top: 20px;
-        margin-left: 25px;
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 300PX;
-        letter-spacing: 3PX;
-        color: rgba(255, 255, 255, 0.075);
-        stroke-width: 2px solid white;
-       
-    }
-    .year span{
-         font-family: 'Bebas Neue', sans-serif;
-        font-size: 300PX;
-        
-        color: #ff3c00;
-    }
-
-
-    .leadbord{
-        width: 50%;
-         margin-right: 30px;
-    }
-        
-    .leadbord h4{
-
-        padding-top: 60px;
-        font-family:'Syne', 'sans-serif' ;
-        letter-spacing: 4px;
-        color: #ff3c00;
-    }  
-     .leadbord h3{
-        font-family: 'Bebas Neue', sans-serif;
-        font-size:60PX;
-     }    
-      .leadbord p{
-        
-
-        font-size: 18px;
-        font-weight: 200;
-        color: gray;
-        line-height: 1.5;
-
-      }
-      .boxx1{
-        margin-top: 30px;
-        
-        display: flex;
-        justify-content: space-around;
-        opacity: 0.5;
-        
-       
-
-      }
-      .boxx1 div{
-        width: 45%;
-        box-sizing: border-box;
-        height: 100PX;
-        border-radius: 5px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: rgba(255, 255, 255, 0.39);
-        font-size: 20px;
-        padding-top: 40px;
-        text-align: center;
-         font-family: 'Bebas Neue', sans-serif;
-         letter-spacing: 2px;
-         transition: .3s ease-in;
-         
-        
-      }
-       .boxx1 div:hover{
-        border-color: #f35727;
-       }
-
-         .boxx2 div:hover{
-        border-color: #f35727;
-       }
-
-        .boxx2{
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-around;
-        opacity: 0.5;
-    
-      }
-      .boxx2 div{
-        width: 45%;
-        box-sizing: border-box;
-        
-        height: 100PX;
-        border-radius: 5px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: rgba(255, 255, 255, 0.39);
-        font-size: 20px;
-        padding-top: 40px;
-        text-align: center;
-         font-family: 'Bebas Neue', sans-serif;
-         letter-spacing: 2px;
-           transition: .3s ease-in;
-      }
-    .demo{
-        margin-top: 22px;
-        box-sizing: border-box;
-        
-    
-        border-radius: 5px;
-        border-width: 0px;
-        border-style: solid;
-        background: #cc3000;
-      
-         transition: 0.3s ease-in;
-
-    }
-    .demo a{
-          font-size: 30px;
-        color: whitesmoke;
-        padding-left: 250px;
-     
-        
-        
-         font-family: 'Bebas Neue', sans-serif;
-         letter-spacing: 5px;
-         text-decoration: none;
-    }
-    .demo:hover{
-        box-shadow: 0px 5px 20px  #cc3000ab;
-        transform: translateY(-3px);
-        
-    }
-  .sfive{
-        background: #0d0d14;
-      height: 450px;
-      
-  }  
-  .topr {
-   
-    text-align: center;
-    padding-top: 35px;
-  }
-
-.topr h3{
-      font-family: 'Bebas Neue', sans-serif;
-        font-size:60PX;
-
-}
-.compname{
-     display: flex;
-     justify-content: space-around;
-     margin: 35px;
-     align-items: center;
-     
-     
-     
-    
-}
-
-
-
-.compname2{
-     display: flex;
-     align-items: center;
-     justify-content: space-around;
-     margin: 35px;
-}
-.ssix{
-    background: #ff3c00;
-    height: 350px;
-  
-}
-
-.ssix h4{
-    text-align: center;
-    padding-top: 40px;
-    font-family:'Syne', 'sans-serif' ;
-     letter-spacing: 10px;
-   
-}
-.ssix h3{
-    text-align: center;
-  
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 120px;
-    margin-top: 10PX;
-    letter-spacing: 15px;
-
-}
-.ssix h2{
-     text-align: center;
-  
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 120px;
-  margin-top: -40px;
-    letter-spacing: 0px;
-
-}
-
-
-  /* main body end*/
-
-
-  /* footer start*/
-.footerinfo{
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-
-}
-  .bottomlogo {
-      
-
-        text-align: center;
-        font-size: 30px;
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 28px;
-        letter-spacing: 3px;
-        
-    }
-
-    .bottomlogo span {
-        color: #ff3c00;
-    }
-.copyright{
-    color: rgba(245, 245, 245, 0.5);
-}
-    
- .social {
-    display: flex;
-     gap: 15px;
-      
- }
-.social a{
-    
- text-decoration: none;
- color: rgba(255, 255, 255, 0.808);
- width: 36px;
-    height: 36px;
-     box-sizing: border-box;
-    border: 1px solid rgba(236, 236, 236, 0.842);
-    border-radius: 50%;
-    text-align: center;
-    padding: 5px;   
-    transition: 0.3s ease-in;
-   
-}
-.social a:hover{
-     border: 1px solid #ff3c00cc;
-      color: #ff3c00d7;
-      transform: scale(1.3);
-}
-  /* footer end*/
-</style>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="logo"> Arena <span>Animation</span></div>
-             <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
+
+
             <div class="menu" id="rightnav">
                 <ul>
-                    <li><a href="index.html"  class="mm" >Home</a></li>
-                    <li><a href="about.html"  class="mm" >About</a></li>
-                    <li><a href="course.html"  class="mm"  >Course</a></li>
-                   
-                    <li><a href="review.html"  class="mm"  >Review</a></li>
-                    <li><a href="contact.html"  class="mm"  >Contact </a></li>
-                    <li> <a href="tel:9999999999"  ><button class="apply">Call Us</button></a></li>
-                </div>
+                    <li><a href="index.html" class="mm">Home</a></li>
+                    <li><a href="about.html" class="mm">About</a></li>
+                    <li><a href="course.html" class="mm">Course</a></li>
 
-                
-                
+                    <li><a href="review.html" class="mm">Review</a></li>
+                    <li><a href="contact.html" class="mm">Contact </a></li>
+                    <li> <a href="tel:9999999999"><button class="apply">Call Us</button></a></li>
+            </div>
+
+            
+
+              <div class="menu" >
+                <ul id="slidemenu">
+                    <li><a href="index.html" class="mm">Home</a></li>
+                    <li><a href="about.html" class="mm">About</a></li>
+                    <li><a href="course.html" class="mm">Course</a></li>
+
+                    <li><a href="review.html" class="mm">Review</a></li>
+                    <li><a href="contact.html" class="mm">Contact </a></li>
+                    <li> <a href="tel:9999999999"><button class="apply">Call Us</button></a></li>
+                    
+            </div>
+
+            
+              <div class="ham">
+                <img src="image/hamburger.png" alt="" id="hamimg"></div>
+
+          
+
         </nav>
     </header>
+
+
+
+
+
+
+
     <main>
- <section class="sone">
+        <section class="sone">
             <div class="main">
                 <div class="add">GTB NAGAR, DELHI-EST.2003</div>
                 <div class="name">ARENA ANIMATION</div>
@@ -581,98 +94,125 @@
 
             </div>
 
-  </section>
-<section class="stwo">
-    <div class="cards">
-        <div class="card">200<span>+</span> CENTERS</div>
-        <div class="card">30<span>+</span> YEARS OF LEGACY </div>
-        <div class="card">1L<span>+</span> STUDENTS PER YEAR</div>
-    </div>
-</section>
-<section class="sthree">
+        </section>
+        <section class="stwo">
+            <div class="cards">
+                <div class="card">200<span>+</span> CENTERS</div>
+                <div class="card">30<span>+</span> YEARS OF LEGACY </div>
+                <div class="card">1L<span>+</span> STUDENTS PER YEAR</div>
+            </div>
+        </section>
+        <section class="sthree">
+
+            <div class="banner">
+                <div class="names"> Animation & VFX </div>
+                <div class="names"> Game Design </div>
+                <div class="names"> UI / UX Design </div>
+                <div class="names"> Motion Graphics </div>
+                <div class="names"> Digital Markeing </div>
+                <div class="names"> 3D Modelling </div>
+                <div class="names"> Film Production </div>
+                <div class="names"> Graphic Design </div>
+                <div class="names"> Animation & VFX </div>
+                <div class="names"> Game Design </div>
+                <div class="names"> UI / UX Design </div>
+                <div class="names"> Motion Graphics </div>
+                <div class="names"> Digital Marketing </div>
+                <div class="names"> 3D Modelling </div>
+                <div class="names"> Film Production </div>
+                <div class="names"> Graphic Design </div>
+
+            </div>
+        </section>
+        <section class="sfour">
+            <div class="year">25<span>+</span><BR>YEAR</div>
+            <div class="leadbord">
+                <h4>---OUR STORY---</h4>
+                <h3>RECOGNISED</h3>
+                <h3>LEADER IN</h3>
+                <H3>CREATIVE FILED</H3>
+                <P>Arena Animation Delhi at GTB Nagar has been shaping the next generation of animation, VFX, game, and
+                    design professionals since 2003. Our industry-first curriculum and expert faculty ensure every
+                    student is job-ready from day one.</P>
+                <div>
+                    <div class="boxx1">
+                        <div>Award-Winning Faculty</div>
+                        <div>Industry Tie-ups</div>
+                    </div>
+                    <div class="boxx2">
+                        <div>Placement Support</div>
+                        <div>Global Curriculum</div>
+                    </div>
+                </div>
+              
+
+
+            </div>
+        </section>
+        <section class="sfive">
+            <div class="topr">
+
+                <h3>Our Top Recruiters</h3>
+
+            </div>
+
+            <div class="collect">
+
+                <div class="compname">
+                    <div> <img src="image/logo1.png" alt="Time network logo"></div>
+                    <div><img src="image/logo2.png" alt="colour vidcom  logo"></div>
+                    <div><img src="image/logo3.png" alt="dharma production logo"></div>
+                    <div><img src="image/logo4.png" alt="zara logo"></div>
+                    <div><img src="image/logo5.png" alt="air asia logo"></div>
+                </div>
+                <div class="compname2">
+                    <div><img src="image/logo6.png" alt="ajj tak logo"></div>
+                    <div><img src="image/logo7.png" alt="zeenews logo"></div>
+                    <div><img src="image/logo8.png" alt="dlf logo"> </div>
+                    <div><img src="image/logo9.png" alt="starbucks logo"></div>
+                    <div><img src="image/logo10.png" alt="sony tv logo"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ssix">
+            <h4>ADDNISSIONS OPEN</h4>
+            <h3>Start your</h3>
+            <h2>Creative Career</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="footerinfo">
+            <div class="bottomlogo"> ARENA <span>Animation</span></div>
+            <div class="copyright">© 2026 Arena ANIMATION Delhi. All Rights Reserved</div>
+            <div class="social">
+                <a href="#">f</a>
+                <a href="#">ig</a>
+                <a href="#">in</a>
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
   
-  <div class="banner" >
-    <div class="names">   Animation & VFX    </div>    
-    <div class="names">   Game Design        </div>    
-    <div class="names">   UI / UX Design     </div>   
-    <div class="names">   Motion Graphics    </div>    
-    <div class="names">   Digital Markeing   </div>     
-    <div class="names">   3D Modelling       </div>    
-    <div class="names">   Film Production    </div>    
-    <div class="names">   Graphic Design     </div>   
-    <div class="names">   Animation & VFX    </div>    
-    <div class="names">   Game Design        </div>   
-    <div class="names">   UI / UX Design     </div>   
-    <div class="names">   Motion Graphics    </div>    
-    <div class="names">   Digital Marketing  </div>   
-    <div class="names">   3D Modelling       </div>    
-    <div class="names">   Film Production    </div>    
-    <div class="names">   Graphic Design     </div>            
-
-  </div>
-</section>
-<section class="sfour">
-    <div class="year">25<span>+</span><BR>YEAR</div>
-    <div class="leadbord">
-        <h4>---OUR STORY---</h4>
-        <h3>RECOGNISED</h3>
-        <h3>LEADER IN</h3>
-        <H3>CREATIVE FILED</H3>
-        <P>Arena Animation Delhi at GTB Nagar has been shaping the next generation of animation, VFX, game, and design professionals since 2003. Our industry-first curriculum and expert faculty ensure every student is job-ready from day one.</P>
-        <div style="margin-left: -20px;">
-            <div class="boxx1"><div>Award-Winning Faculty</div>
-            <div>Industry Tie-ups</div></div>
-            <div class="boxx2"><div>Placement Support</div>
-            <div>Global Curriculum</div></div>
-        </div>
-        <div class="demo"> <a href="#">BOOK A FREE DEMO CLASS</a></div>
-        
-
-    </div>
-</section>
-<section class="sfive">
-    <div class="topr">
-
-        <h3>Our Top Recruiters</h3>
-
-    </div>
-    <div class="compname">
-        <div> <img src="image/logo1.png" alt="Time network logo" ></div>
-        <div><img src="image/logo2.png" alt="colour vidcom  logo" ></div>
-        <div><img src="image/logo3.png" alt="dharma production logo" ></div>
-        <div><img src="image/logo4.png" alt="zara logo" ></div>
-        <div><img src="image/logo5.png" alt="air asia logo" ></div>
-</div> 
-        <div class="compname2"> 
-        <div><img src="image/logo6.png" alt="ajj tak logo"  ></div>
-        <div><img src="image/logo7.png" alt="zeenews logo"  ></div>
-        <div><img src="image/logo8.png" alt="dlf logo"  >   </div>
-        <div><img src="image/logo9.png" alt="starbucks logo"  ></div>
-        <div><img src="image/logo10.png" alt="sony tv logo"  ></div>
-    </div> 
-</section>
-
-<section class="ssix">
-    <h4>ADDNISSIONS OPEN</h4>
-    <h3>Start your</h3>
-    <h2>Creative Career</h2>
-</section>
- </main>
-<footer>
-    <div class="footerinfo">
-        <div class="bottomlogo" > ARENA <span>Animation</span></div>
-        <div class="copyright">© 2026 Arena ANIMATION Delhi. All Rights Reserved</div>
-        <div class="social">
-            <a href="#">f</a>
-            <a href="#">ig</a>
-            <a href="#">in</a>
-            
-        </div>
-    </div>
-
-
-</footer>
-
 </body>
+
+  <script>
+
+        $(document).ready(function(){
+
+
+             $("#slidemenu").slideUp(500)
+
+            $("#hamimg").click(function(){
+                $("#slidemenu").slideToggle(500)
+            })
+        })
+
+
+    </script>
 
 </html>
